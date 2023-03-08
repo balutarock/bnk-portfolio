@@ -30,7 +30,10 @@ const MobileNav = () => {
   return (
     <div className="flex flex-wrap justify-center items-center pl-4 pr-4 md:hidden">
       {navLinks.map((each: any) => (
-        <div className="flex flex-col justify-center items-center mr-5 mb-5">
+        <div
+          key={each.id}
+          className="flex flex-col justify-center items-center mr-5 mb-5"
+        >
           <div>{each.icon}</div>
           <Anchor data={{ id: each.id, title: each.title }} />
         </div>

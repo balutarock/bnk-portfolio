@@ -31,11 +31,11 @@ const AboutMeList = () => {
       {list.map((each) => (
         <Card
           childElements={
-            <>
+            <li>
               {each.icon}
               <Label name={each.title} styles={"font-semibold text-sm"} />
               <Label name={each.description} styles={"text-gray-500 text-sm"} />
-            </>
+            </li>
           }
         />
       ))}
