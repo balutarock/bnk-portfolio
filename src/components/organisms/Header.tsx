@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { BsListStars } from "react-icons/Bs";
-import { IoIosClose } from "react-icons/Io";
+// import { BsListStars } from "react-icons/Bs";
+// import { IoIosClose } from "react-icons/Io";
 
 import NavLinks from "../molecules/NavLinks";
 import Anchor from "../atoms/Anchor";
@@ -20,7 +20,11 @@ const Header = () => {
         <Anchor data={{ id: 1, title: "Balu" }} />
         <NavLinks />
         <button onClick={onClickMenu} className="md:hidden text-lg">
-          {showMenu ? <IoIosClose /> : <BsListStars />}
+          {showMenu
+            ? // <IoIosClose />
+              "X"
+            : // <BsListStars />
+              "Menu"}
         </button>
       </div>
       {showMenu ? <MobileNav /> : ""}
