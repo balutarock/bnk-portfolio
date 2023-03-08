@@ -11,7 +11,10 @@ const SkillCard = (props: any) => {
           <Label name={"front end"} styles={"text-normal font-semibold mb-4"} />
           <ul className="flex flex-row justify-between items-center flex-wrap">
             {skillsList.map((each: any) => (
-              <li className="flex flex-row justify-center items-center mr-4">
+              <li
+                className="flex flex-row justify-center items-center mr-4"
+                key={each.id}
+              >
                 <TiTickOutline className="mr-2" />
                 <div>
                   <Label name={each.title} styles={"text-sm font-semibold"} />

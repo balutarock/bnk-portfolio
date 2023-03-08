@@ -29,15 +29,20 @@ const AboutMeList = () => {
   return (
     <ul className="flex flex-row justify-center items-center flex-wrap mt-4">
       {list.map((each) => (
-        <Card
-          childElements={
-            <li>
-              {each.icon}
-              <Label name={each.title} styles={"font-semibold text-sm"} />
-              <Label name={each.description} styles={"text-gray-500 text-sm"} />
-            </li>
-          }
-        />
+        <li key={each.id}>
+          <Card
+            childElements={
+              <li>
+                {each.icon}
+                <Label name={each.title} styles={"font-semibold text-sm"} />
+                <Label
+                  name={each.description}
+                  styles={"text-gray-500 text-sm"}
+                />
+              </li>
+            }
+          />
+        </li>
       ))}
     </ul>
   );

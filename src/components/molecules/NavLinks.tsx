@@ -13,7 +13,7 @@ const NavLinks = () => {
   return (
     <ul className="flex flex-wrap hidden md:flex">
       {navLinks.map((each: any) => (
-        <li className="ml-4">
+        <li className="ml-4" key={each.id}>
           <Anchor data={each} />
         </li>
       ))}
