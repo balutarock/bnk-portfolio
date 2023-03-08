@@ -10,20 +10,36 @@ import { CiPaperplane } from "react-icons/Ci";
 import Anchor from "../atoms/Anchor";
 
 const navLinks = [
-  { id: 1, title: "Home", icon: <AiOutlineHome className="text-lg" /> },
-  { id: 2, title: "About", icon: <MdPersonOutline className="text-lg" /> },
-  { id: 3, title: "Skills", icon: <FcDocument className="text-lg" /> },
+  {
+    id: 1,
+    title: "Home",
+    // icon: <AiOutlineHome className="text-lg" />
+  },
+  {
+    id: 2,
+    title: "About",
+    // icon: <MdPersonOutline className="text-lg" />
+  },
+  {
+    id: 3,
+    title: "Skills",
+    // icon: <FcDocument className="text-lg" />
+  },
   {
     id: 4,
     title: "Services",
-    icon: <MdOutlineHomeRepairService className="text-lg" />,
+    // icon: <MdOutlineHomeRepairService className="text-lg" />,
   },
   {
     id: 5,
     title: "Portfolio",
-    icon: <MdOutlineImageSearch className="text-lg" />,
+    // icon: <MdOutlineImageSearch className="text-lg" />,
   },
-  { id: 6, title: "Contact", icon: <CiPaperplane className="text-lg" /> },
+  {
+    id: 6,
+    title: "Contact",
+    // icon: <CiPaperplane className="text-lg" />
+  },
 ];
 
 const MobileNav = () => {
@@ -34,7 +50,7 @@ const MobileNav = () => {
           key={each.id}
           className="flex flex-col justify-center items-center mr-5 mb-5"
         >
-          <div>{each.icon}</div>
+          {/* <div>{each.icon}</div> */}
           <Anchor data={{ id: each.id, title: each.title }} />
         </div>
       ))}
