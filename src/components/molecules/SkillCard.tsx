@@ -1,4 +1,4 @@
-import { TiTickOutline } from "react-icons/Ti";
+// import { TiTickOutline } from "react-icons/Ti";
 import Label from "../atoms/Label";
 import Card from "../atoms/Card";
 
@@ -15,7 +15,7 @@ const SkillCard = (props: any) => {
                 className="flex flex-row justify-center items-center mr-4"
                 key={each.id}
               >
-                <TiTickOutline className="mr-2" />
+                {/* <TiTickOutline className="mr-2" /> */}
                 <div>
                   <Label name={each.title} styles={"text-sm font-semibold"} />
                   <Label name={each.level} styles={"text-sm text-gray-400"} />

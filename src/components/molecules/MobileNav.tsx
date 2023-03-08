@@ -1,11 +1,11 @@
-import { AiOutlineHome } from "react-icons/Ai";
-import {
-  MdPersonOutline,
-  MdOutlineHomeRepairService,
-  MdOutlineImageSearch,
-} from "react-icons/Md";
-import { FcDocument } from "react-icons/Fc";
-import { CiPaperplane } from "react-icons/Ci";
+// import { AiOutlineHome } from "react-icons/Ai";
+// import {
+//   MdPersonOutline,
+//   MdOutlineHomeRepairService,
+//   MdOutlineImageSearch,
+// } from "react-icons/Md";
+// import { FcDocument } from "react-icons/Fc";
+// import { CiPaperplane } from "react-icons/Ci";
 
 import Anchor from "../atoms/Anchor";
 
