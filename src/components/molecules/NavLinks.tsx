@@ -1,12 +1,12 @@
 import Anchor from "../atoms/Anchor";
 
 const navLinks = [
-  { id: 1, title: "Home" },
-  { id: 2, title: "About" },
-  { id: 3, title: "Skills" },
-  { id: 4, title: "Services" },
-  { id: 5, title: "Portfolio" },
-  { id: 6, title: "Contact" },
+  { id: 1, title: "Home", link: "/" },
+  { id: 2, title: "About", link: "/about" },
+  { id: 3, title: "Skills", link: "/skills" },
+  { id: 4, title: "Services", link: "/#" },
+  { id: 5, title: "Portfolio", link: "/#" },
+  { id: 6, title: "Contact", link: "/#" },
 ];
 
 const NavLinks = () => {

@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const Anchor = (props: any) => {
   const { data } = props;
-  const { title } = data;
+  const { title, link } = data;
   return (
-    <a href="#" className="font-sans text-base font-medium">
+    <Link href={`${link}`} className="font-sans text-base font-medium">
       {title}
-    </a>
+    </Link>
   );
 };
 
