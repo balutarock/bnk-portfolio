@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className="shadow-xl bg-transparent fixed top-0 left-0 right-0">
+    <header className="shadow-xl bg-white fixed top-0 left-0 right-0">
       <div className="flex justify-between md:justify-around pt-4 pb-4 md:pt-6 md:pb-6 pr-4 pl-4 w-full">
         <Anchor data={{ id: 1, title: "Balu" }} />
         <NavLinks />

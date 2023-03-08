@@ -1,3 +1,5 @@
+import Typewriter from "typewriter-effect";
+
 import H1Name from "../atoms/H1Name";
 import Image from "../atoms/Image";
 import Designation from "../atoms/Designation";
@@ -13,9 +15,23 @@ const HomeIntroduction = () => {
       <Image src={imageURL} />
       <div className="flex flex-col justify-center items-center md:ml-20 mt-20 md:mt-0 max-w-lg">
         <H1Name name={"Bala Nagendra Kumar"} />
-        <div className="w-full flex flex-row justify-center items-center">
+        <div className="w-full flex flex-row justify-center items-center text-lg md:text-xl">
           {/* <hr className="w-full text-lg font-black font-blod" /> */}
-          <Designation name={"Full Stack Software Developer"} />
+          <Typewriter
+            options={{
+              strings: [
+                "Software Developer",
+                "Full-Stack Developer",
+                "Web Developer",
+                "MERN Stack Developer",
+              ],
+              autoStart: true,
+              skipAddStyles: false,
+              loop: true,
+            }}
+          />
+
+          {/* <Designation name={"Full Stack Software Developer"} /> */}
           {/* <hr className="w-full text-lg font-black font-blod" /> */}
         </div>
         <Description
